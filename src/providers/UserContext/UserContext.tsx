@@ -19,8 +19,6 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
   const [user, setUser] = useState<IUser | null>(null);
   const [loading, setLoading] = useState<ILoading | boolean>(false);
 
-  const currentPath = window.location.pathname;
-
   const navigate = useNavigate();
 
   const userLogin = async (formData: TLoginForm) => {

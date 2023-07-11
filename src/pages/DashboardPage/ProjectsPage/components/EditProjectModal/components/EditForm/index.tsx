@@ -24,7 +24,7 @@ export const EditForm: React.FC<EditFormProps> = () => {
   });
 
   const submit: SubmitHandler<TEditForm> = (formData) => {
-    const projectId = selectedProject.id!;
+    const projectId = selectedProject?.id;
     if (projectId !== null && projectId !== undefined) {
       editProject(formData, projectId);
       setOpenEditModal(false);

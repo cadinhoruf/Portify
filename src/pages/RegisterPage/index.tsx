@@ -4,7 +4,6 @@ import { Footer } from "../../components/Footer";
 import { Button } from "../../components/Button";
 import { Link } from "react-router-dom";
 import {
-  StyledContainerHeader,
   StyledContainerMain,
   StyledContainerHeading,
   StyledContainerForm,

@@ -2,25 +2,9 @@ import { StyledNavBar } from "./styles";
 import profile from "../../assets/icons/profile.png";
 import projects from "../../assets/icons/projects.png";
 import home from "../../assets/icons/home.png";
-import { useState, useContext, useEffect } from "react";
-import { PortfolioContext } from "../../providers/PortfolioContext/PortfolioContext";
 import { Link } from "react-router-dom";
 
 export const NavBar = () => {
-  // const [isPortfolio, setIsPortfolio] = useState<boolean>(false);
-
-  // const { verifyPortfolio } = useContext(PortfolioContext);
-
-  // useEffect(() => {
-  //   const hasPortfolio = async () => {
-  //     const newIsPortfolio: boolean = await verifyPortfolio();
-  //     setIsPortfolio(newIsPortfolio);
-  //     console.log("effect");
-  //   };
-  //   hasPortfolio();
-  //   console.log(hasPortfolio());
-  // }, []);
-
   return (
     <StyledNavBar>
       <Link to="/dashboard">
