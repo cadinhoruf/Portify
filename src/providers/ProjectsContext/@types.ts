@@ -1,6 +1,6 @@
 import React from "react";
 import { TAddForm } from "../../pages/DashboardPage/ProjectsPage/components/AddProjectModal/components/AddForm/schema";
-import { TEditForm } from '../../pages/DashboardPage/ProjectsPage/components/EditProjectModal/components/EditForm/schema';
+import { TEditForm } from "../../pages/DashboardPage/ProjectsPage/components/EditProjectModal/components/EditForm/schema";
 
 export interface IProjectsProviderProps {
   children: React.ReactNode;

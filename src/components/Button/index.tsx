@@ -10,7 +10,13 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export const Button = forwardRef<HTMLButtonElement, IButtonProps>(
   ({ widthsize, color, name, onClick, type, ...rest }, ref) => {
     return (
-      <StyledButton widthsize={widthsize} color={color} type={type} onClick={onClick} ref={ref} {...rest}>
+      <StyledButton 
+        widthsize={widthsize} 
+        color={color} 
+        type={type} 
+        onClick={onClick} 
+        ref={ref} 
+        {...rest}>
         {name}
       </StyledButton>
     );

@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.1rem;
 
   min-height: 100vh;
 
@@ -20,6 +20,7 @@ export const NameButtonContainer = styled.div`
 
   h3 {
     color: var(--color-white);
+
     font-family: var(--font-family-secondary);
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-1);
@@ -30,16 +31,25 @@ export const ContentWrapper = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-top:2rem;
+  gap: 2rem;
 
+  margin-top: 1rem;
   margin-left: 15%;
   margin-right: 15%;
+  
 `;
 
 export const SectionStyled = styled.section`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+
+  padding-bottom: 2rem;
+
+  ul {
+    display: flex;
+    gap: 4rem;
+  }
 `;
 
 export const TittleAndButtonContainer = styled.div`
@@ -49,7 +59,9 @@ export const TittleAndButtonContainer = styled.div`
   justify-content: space-between;
 
   h2 {
-    font-size: 2.5rem;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+
+    margin-bottom: 1rem;
   }
 
   button {
@@ -57,10 +69,10 @@ export const TittleAndButtonContainer = styled.div`
   }
 
   img {
-    width: 30px;
+    width: 1.875rem;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 50rem) {
     flex-direction: row;
   }
 `;

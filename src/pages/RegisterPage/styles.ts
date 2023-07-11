@@ -5,7 +5,7 @@ export const StyledContainerHeader = styled.div`
   display: flex;
   align-items: center;
 
-  @media (max-width: 675px) {
+  @media (max-width: 42.1875rem) {
     .hidden {
       display: none;
     }
@@ -17,30 +17,35 @@ export const StyledContainerMain = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
-  margin: 0 auto;
-
-  max-width: 1000px;
-  padding: 8rem 5rem;
-  width: 100%;
   gap: 2rem;
 
-  @media (max-width: 768px) {
+  margin: 0 auto;
+  padding: 8rem 5rem;
+
+  max-width: 1000px;
+  width: 100%;
+
+  @media (max-width: 48rem) {
     padding: 4rem;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 34.375rem) {
     padding: 2rem 3rem;
+  }
+
+  @media (min-width: 64rem) {
+    margin-top: 5.7%;
+    margin-bottom: 5.7%;
   }
 `;
 
 export const StyledContainerHeading = styled.div`
   display: flex;
   flex-direction: column;
-    
-  min-width: 268px;
-  width: 100%;
   gap: 1.5rem;
+    
+  min-width: 16.75rem;
+  width: 100%;
 
   h1 {
     font-family: var(--font-family-primary);
@@ -52,7 +57,8 @@ export const StyledContainerHeading = styled.div`
     font-family: var(--font-family-secondary);
     font-weight: var(--font-weight-1);
     font-size: var(--font-size-2);
-    color: #00000080;
+
+    color: var(--color-black-text);
   }
 `;
 
@@ -60,7 +66,7 @@ export const StyledContainerForm = styled.div`
   display: flex;
   flex-direction: column;
 
-  min-width: 268px;
+  min-width: 16.75rem;
   width: 100%;
 `
 
@@ -68,9 +74,10 @@ export const StyledLink = styled(Link)`
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-2);
   font-size: var(--font-size-3);
+
   color: var(--color-primary);
 
-  gap: .5rem;
   display: flex;
   align-items: center;
+  gap: .5rem;
 `;

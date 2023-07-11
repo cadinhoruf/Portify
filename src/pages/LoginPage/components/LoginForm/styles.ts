@@ -7,6 +7,7 @@ export const StyledContainerFields = styled.div`
 
   span {
     color: red;
+
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-1);
     font-family: var(--font-family-secondary);
@@ -18,7 +19,7 @@ export const StyledContainerButtons = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 740px) {
+  @media (max-width: 46.25rem) {
     button {
       width: 100%;
     }

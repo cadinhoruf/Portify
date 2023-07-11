@@ -4,12 +4,14 @@ export const StyledProjectList = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 2rem;
 
+  gap: 2rem;
+  
   .any-project {
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 50vh;
   }
 
@@ -17,7 +19,7 @@ export const StyledProjectList = styled.ul`
     text-align: center;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 50rem) {
     gap: 2rem;
   }
 `;

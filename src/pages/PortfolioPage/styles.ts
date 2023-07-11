@@ -4,11 +4,13 @@ export const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.625rem;
+
   width: 100%;
+  height: 4.375rem;
+
   padding-left: 15%;
   padding-right: 15%;
-  height: 4.375rem;
-  gap: 0.625rem;
 
   background: ${(props) => props.theme.colors.background};
 
@@ -21,34 +23,45 @@ export const StyledHeader = styled.header`
 export const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
+
   min-height: 100vh;
 `;
 
 export const ContentWrapper = styled.div`
   flex: 1;
+
   background: ${(props) => props.theme.colors.background};
+
   color: ${(props) => props.theme.colors.text};
 `;
 
 export const UserContainer = styled.div`
   display: flex;
-  flex-direction: column;
   gap: 1rem;
+
   margin-top: 1rem;
   padding-left: 15%;
   padding-right: 15%;
+  
   color: ${(props) => props.theme.colors.text};
 
-  p {
-    color: var(--color-black);
+  h2 {
+    font-size: clamp(1.6rem, 4vw, 2rem);
 
+    width: fit-content;
+  }
+  
+  p {
+    line-height: 1.75rem;
     font-size: var(--font-size-3);
 
-    line-height: 28px;
+    width: 100%;
+    max-width: 75rem;
   }
 
-  @media (min-width: 800px) {
-    flex-direction: row;
+  @media (max-width: 696px) {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 `;
 
@@ -57,19 +70,21 @@ export const UserInfoContainer = styled.div`
   flex-direction: column;
   gap: 1.5rem;
 
-  h2 {
-    font-size: 40px;
-  }
-
-  p {
+  span {
+    font-weight: var(--font-weight-2);
     font-size: var(--font-size-3);
-    font-weight: 700;
 
     color: var(--color-primary);
+
+    width: fit-content;
+
+    @media (max-width: 696px) {
+      align-self: center;
+    }
   }
 
-  @media (min-width: 800px) {
-    width: 100vw;
+  @media (min-width: 50rem) {
+    width: 40vw;
   }
 `;
 
@@ -80,12 +95,21 @@ export const SectionStyled = styled.section`
 
   padding-left: 15%;
   padding-right: 15%;
-
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
   > h1 {
-    font-size: 36px;
-    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1.6rem, 4vw, 2.25rem);
+  
+    @media (max-width: 49.875rem) {
+      align-self: center;
+    }
+  }
+
+  ul {
+    gap: 4rem;
+    margin-bottom: 3rem;
   }
 `;

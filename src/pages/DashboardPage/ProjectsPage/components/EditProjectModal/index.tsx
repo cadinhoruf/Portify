@@ -2,8 +2,8 @@ import { RefObject, useContext, useEffect } from "react";
 import { useOutsideClick } from "../../../../../hooks/useOutsideClick";
 import CloseButtonBlack from "../../../../../assets/icons/close-black.png";
 import { StyledModal } from "../../../../../styles/modalStyles";
-import { EditForm } from './components/EditForm';
-import { ProjectsContext } from '../../../../../providers/ProjectsContext/ProjectsContext';
+import { EditForm } from "./components/EditForm";
+import { ProjectsContext } from "../../../../../providers/ProjectsContext/ProjectsContext";
 
 export const EditProjectModal = () => {
   const { setOpenEditModal } = useContext(ProjectsContext);
@@ -30,7 +30,7 @@ export const EditProjectModal = () => {
 
   return (
     <StyledModal role="dialog">
-      <div ref={modalRef}>
+      <div ref={modalRef} className="modal-box">
         <div className="title-container">
           <h1>Editar Projeto</h1>
           <img src={CloseButtonBlack} onClick={() => setOpenEditModal(false)} />

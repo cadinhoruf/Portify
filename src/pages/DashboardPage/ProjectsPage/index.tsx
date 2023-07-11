@@ -23,6 +23,7 @@ export const ProjectsPage = () => {
   const { user, userLogout } = useContext(UserContext);
   const { projectList, openEditModal } = useContext(ProjectsContext);
   const { isPortfolioId } = useContext(PortfolioContext);
+
   const [openAddModal, setOpenAddModal] = useState(false);
 
   return (
@@ -59,7 +60,7 @@ export const ProjectsPage = () => {
             ) : (
               <div className="any-project">
                 <h3>
-                  Nenhum projeto cadastrado.
+                  Nenhum projeto cadastrado
                 </h3>
               </div>
             )}

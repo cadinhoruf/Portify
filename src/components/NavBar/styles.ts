@@ -3,25 +3,22 @@ import { styled } from "styled-components";
 export const StyledNavBar = styled.nav`
   display: flex;
   flex-wrap: wrap;
-
   gap: 1.5rem;
 
   figure {
     display: flex;
     align-items: center;
-
     gap: 1rem;
 
     img {
-      width: 30px;
-      height: 30px;
+      width: 1.875rem;
+      height: 1.875rem;
     }
 
     figcaption {
-      /* font-family: --font-family-primary; */
       font-size: 1.125rem;
-      font-weight: 700;
-      color: #0f1411;
+      font-weight: var(--font-weight-2);
+      color: var(--color-black-2);
 
       &:hover,
       &:active {

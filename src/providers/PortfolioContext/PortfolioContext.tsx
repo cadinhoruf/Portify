@@ -44,7 +44,7 @@ export const PortfolioProvider = ({ children }: IPortfolioProviderProps) => {
       toast.success("Portfólio criado com sucesso.");
       navigate("/dashboard");
     } catch (error: AxiosError | any) {
-      toast.error("Não foi possível criar este portfólio.");
+      toast.error("Não foi possível criar o portfólio.");
       console.error(error.message);
     } finally {
       setLoading(false);
@@ -70,7 +70,7 @@ export const PortfolioProvider = ({ children }: IPortfolioProviderProps) => {
 
       navigate("/dashboard");
     } catch (error: AxiosError | any) {
-      toast.error("Não foi possível editar este portfólio.");
+      toast.error("Não foi possível editar o portfólio.");
       console.error(error.message);
     }
   };
@@ -94,7 +94,6 @@ export const PortfolioProvider = ({ children }: IPortfolioProviderProps) => {
         return false;
       }
     }
-
     return false;
   };
 

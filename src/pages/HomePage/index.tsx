@@ -1,6 +1,5 @@
 import logo from "../../assets/images/logo-green.png";
 import home from "../../assets/images/home.png";
-
 import { Button } from "../../components/Button";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
@@ -27,7 +26,6 @@ export const HomePage = () => {
             color="solid-black"
           />
         </Link>
-
         <Link to="/login">
           <Button
             widthsize="large1"
@@ -36,7 +34,6 @@ export const HomePage = () => {
           />
         </Link>
       </Header>
-
       <main>
         <StyledContainerMain>
           <StyledContainerImage>
@@ -45,14 +42,12 @@ export const HomePage = () => {
               alt="mulher com roupa verder segurando um laptop nas mãos"
             />
           </StyledContainerImage>
-
           <StyledContainerAlongside>
             <StyledContainerHeading>
               <img src={logo} alt="logotipo da pagina na cor verde" />
               <h1>Crie seu portfólio online</h1>
               <p>Crie um portfólio para você em minutos</p>
             </StyledContainerHeading>
-
             <StyledContainerButtons>
               <StyledLink to="/register">
                 <Button
@@ -61,9 +56,7 @@ export const HomePage = () => {
                   color="solid-green"
                 />
               </StyledLink>
-
               <p>ou</p>
-
               <StyledLink to="/login">
                 <Button
                   name="acesse seu portfólio"
@@ -75,7 +68,6 @@ export const HomePage = () => {
           </StyledContainerAlongside>
         </StyledContainerMain>
       </main>
-
       <Footer />
     </>
   );

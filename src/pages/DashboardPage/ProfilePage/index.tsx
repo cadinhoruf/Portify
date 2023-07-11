@@ -26,7 +26,6 @@ export const ProfilePage = () => {
       const hasPortfolio: boolean = await verifyPortfolio();
       setHasPortfolio(hasPortfolio);
     };
-
     checkPortfolio();
   }, []);
 
@@ -36,7 +35,6 @@ export const ProfilePage = () => {
         <Header>
           <StyledContainerHeader>
             <span>{user?.name}</span>
-
             <Button
               name="Sair"
               type="button"
@@ -49,23 +47,20 @@ export const ProfilePage = () => {
         <StyledMain>
           <NavBar />
           <StyledContainerMain>
-            <h1>Informações no perfil:</h1>
-
+            <h1>Informações do perfil:</h1>
             <StyledContainerUserData>
               <small>
                 <strong>Nome:</strong>
                 {user?.name}
               </small>
               <small>
-                <strong>Email:</strong>
+                <strong>E-mail:</strong>
                 {user?.email}
               </small>
             </StyledContainerUserData>
-
             {hasPortfolio ? <EditProfileForm /> : <CreateProfileForm />}
           </StyledContainerMain>
         </StyledMain>
-
         <Footer />
       </PageWrapper>
     </>

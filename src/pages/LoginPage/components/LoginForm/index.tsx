@@ -22,7 +22,6 @@ export const LoginForm = () => {
 
   const submit: SubmitHandler<TLoginForm> = async (formData) => {
     await userLogin(formData);
-    
     reset();
   };
 
@@ -31,11 +30,9 @@ export const LoginForm = () => {
       <StyledContainerFields>
         <Input type="email" placeholder="E-mail" {...register("email")} />
         {errors.email ? <span>{errors.email.message}</span> : null}
-
         <Input type="password" placeholder="Senha" {...register("password")} />
         {errors.password ? <span>{errors.password.message}</span> : null}
       </StyledContainerFields>
-
       <StyledContainerButtons>
         <Button
           type="submit"
@@ -43,9 +40,7 @@ export const LoginForm = () => {
           color="solid-green"
           name={loading ? "entrando" : "entrar"}
         />
-
         <p>Não possui cadastro?</p>
-
         <Link to="/register">
           <Button
             type="button"

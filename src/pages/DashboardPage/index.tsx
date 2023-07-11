@@ -31,7 +31,6 @@ export const DashboardPage = () => {
         <Header>
           <StyledHeaderButton>
             <h3>{user?.name}</h3>
-
             <Button
               name="Sair"
               color="outline-black"
@@ -40,21 +39,18 @@ export const DashboardPage = () => {
             />
           </StyledHeaderButton>
         </Header>
-
         <StyledMain>
           <h1>
-            Seja bem vindo: <span> {user?.name}</span>
+            Seja bem-vindo: <span> {user?.name}</span>
           </h1>
-          <p>Selecione uma das opções abaixo</p>
-
+          <p>Selecione uma das opções abaixo:</p>
           <NavBar />
-
           {isPortfolio ? (
             <section>
               <h2>Seu portfólio está online</h2>
               <small>Acesse em</small>
               <a href="/portfolio" target="_blank">
-                www.portify.com.br/portfolio
+              https://m3-g5-portify.vercel.app/portfolio
               </a>
             </section>
           ) : (
@@ -69,7 +65,6 @@ export const DashboardPage = () => {
             </section>
           )}
         </StyledMain>
-
         <Footer />
       </PageWrapper>
     </>

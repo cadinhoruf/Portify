@@ -5,13 +5,12 @@ export const StyledFooter = styled.footer`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
   gap: 2rem;
+
   width: 100%;
 
   padding-left: 15%;
   padding-right: 15%;
-
   padding-top: 2rem;
   padding-bottom: 2rem;
 
@@ -29,16 +28,17 @@ export const StyledFooter = styled.footer`
     font-family: var(--font-family-secondary);
 
     text-align: center;
-    max-width: 400px;
+
+    max-width: 25rem;
 
     color: var(--color-black);
   }
 
-  @media (max-width: 696px) {
+  @media (max-width: 43.5rem) {
     justify-content: center;
 
     p {
-      max-width: 400px;
+      max-width: 25rem;
     }
   }
 `;

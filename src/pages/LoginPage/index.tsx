@@ -1,5 +1,4 @@
 import login from "../../assets/images/login.png";
-
 import { LoginForm } from "./components/LoginForm";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
@@ -24,7 +23,6 @@ export const LoginPage = () => {
               color="solid-black"
             />
           </Link>
-
           <Link to="/login">
             <Button
               widthsize="large1"
@@ -33,7 +31,6 @@ export const LoginPage = () => {
             />
           </Link>
       </Header>
-
       <main>
         <StyledContainerMain>
           <StyledContainerImage>
@@ -42,7 +39,6 @@ export const LoginPage = () => {
               alt="Homem de óculos segurando e olhando um tablet"
             />
           </StyledContainerImage>
-          
           <StyledContainerForm>
             <h1>Login</h1>
             <p>Acesse o portfólio</p>
@@ -50,7 +46,6 @@ export const LoginPage = () => {
           </StyledContainerForm>
         </StyledContainerMain>
       </main>
-
       <Footer />
     </>
   );

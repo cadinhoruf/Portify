@@ -9,8 +9,7 @@ import { StyledProfileForm } from "../../styles";
 import { useContext, useEffect } from "react";
 
 export const EditProfileForm = () => {
-  const { portfolio, editPortfolio } =
-    useContext(PortfolioContext);
+  const { portfolio, editPortfolio } = useContext(PortfolioContext);
 
   const {
     reset,
@@ -44,23 +43,20 @@ export const EditProfileForm = () => {
         <option value="Claro">Claro</option>
         <option value="Escuro">Escuro</option>
       </select>
-
       <Input
         label="Cargo"
         placeholder="Cargo"
         {...register("position")}
         defaultValue={portfolio?.position}
       />
-      {errors.position ? <p>{errors.position.message}</p> : null}
-
+      {errors.position ? <p className="text-error">{errors.position.message}</p> : null}
       <label>Descrição</label>
       <textarea
         placeholder="Descrição"
         {...register("description")}
         defaultValue={portfolio?.description}
       />
-      {errors.description ? <p>{errors.description.message}</p> : null}
-
+      {errors.description ? <p className="text-error">{errors.description.message}</p> : null}
       <Button
         type="submit"
         widthsize="large1"

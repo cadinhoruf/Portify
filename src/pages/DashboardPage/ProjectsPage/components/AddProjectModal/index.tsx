@@ -32,7 +32,7 @@ export const AddProjectModal = ({ setOpenAddModal, isPortfolioId, }: AddProjectM
 
   return (
     <StyledModal role="dialog">
-      <div ref={modalRef}>
+      <div ref={modalRef} className="modal-box">
         <div className="title-container">
           <h1>Criar Projeto</h1>
           <img src={CloseButtonBlack} onClick={() => setOpenAddModal(false)} />

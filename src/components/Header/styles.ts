@@ -5,18 +5,18 @@ export const StyledHeader = styled.header`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
   gap: 1.5rem;
+
   width: 100%;
+
   padding-left: 15%;
   padding-right: 15%;
-
   padding-top: 1rem;
   padding-bottom: 1rem;
 
   background-color: var(--color-black);
 
-  @media (max-width: 708px) {
+  @media (max-width: 44.25rem) {
     justify-content: center;
   }
 `;
@@ -25,7 +25,7 @@ export const StyledContainerHeader = styled.div`
   display: flex;
   align-items: center;
 
-  @media (max-width: 675px) {
+  @media (max-width: 42.1875rem) {
     .hidden {
       display: none;
     }

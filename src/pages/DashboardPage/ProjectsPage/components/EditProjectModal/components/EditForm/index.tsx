@@ -12,7 +12,8 @@ interface EditFormProps {
 }
 
 export const EditForm: React.FC<EditFormProps> = () => {
-  const { editProject, selectedProject, setOpenEditModal } = useContext(ProjectsContext);
+  const { editProject, selectedProject, setOpenEditModal } =
+    useContext(ProjectsContext);
 
   const {
     reset,
@@ -46,24 +47,34 @@ export const EditForm: React.FC<EditFormProps> = () => {
 
   return (
     <StyledEditForm onSubmit={handleSubmit(submit)}>
-      <label htmlFor="name">Nome</label>
-      <Input type="text" id="name" {...register("name")} />
+      <Input type="text" id="name" {...register("name")} placeholder="Nome" />
       {errors.name?.message && <p>{errors.name.message}</p>}
-
-      <label htmlFor="description">Descrição resumida</label>
-      <Input type="text" id="description" {...register("description")} />
+      <Input
+        type="text"
+        id="description"
+        {...register("description")}
+        placeholder="Descrição resumida"
+      />
       {errors.description?.message && <p>{errors.description.message}</p>}
-
-      <label htmlFor="repository">Repositório</label>
-      <Input type="text" id="repository" {...register("repository")} />
+      <Input
+        type="text"
+        id="repository"
+        {...register("repository")}
+        placeholder="Repositório"
+      />
       {errors.repository?.message && <p>{errors.repository.message}</p>}
-
-      <label htmlFor="link">Link do deploy (opcional)</label>
-      <Input type="text" id="link" {...register("link")} />
-
-      <label htmlFor="img">URL da imagem (opcional)</label>
-      <Input type="text" id="coverUrl" {...register("coverUrl")} />
-
+      <Input
+        type="text"
+        id="link"
+        {...register("link")}
+        placeholder="Link do deploy (opcional)"
+      />
+      <Input
+        type="text"
+        id="coverUrl"
+        {...register("coverUrl")}
+        placeholder="URL da imagem (opcional)"
+      />
       <StyledButton color="solid-green" widthsize="large1" type="submit">
         Editar Projeto
       </StyledButton>

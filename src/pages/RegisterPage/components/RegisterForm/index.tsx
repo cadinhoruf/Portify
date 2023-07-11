@@ -47,12 +47,10 @@ export const RegisterForm = () => {
           <Input type="text" placeholder="Nome" {...register("name")} />
           {errors.name && <p>{errors.name.message}</p>}
         </StyledContainerIntern>
-
         <StyledContainerIntern>
           <Input type="email" placeholder="E-mail" {...register("email")} />
           {errors.email && <p>{errors.email.message}</p>}
         </StyledContainerIntern>
-
         <StyledContainerIntern>
           <Input
             type="password"
@@ -61,7 +59,6 @@ export const RegisterForm = () => {
           />
           {errors.password && <p>{errors.password.message}</p>}
         </StyledContainerIntern>
-
         <StyledContainerIntern>
           <Input
             type="password"
@@ -71,7 +68,6 @@ export const RegisterForm = () => {
           {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
         </StyledContainerIntern>
       </StyledContainerFields>
-
       <StyledContainerButton>
         <Button
           type="submit"

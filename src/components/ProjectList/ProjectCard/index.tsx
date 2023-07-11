@@ -28,7 +28,7 @@ export const ProjectCard = () => {
           if (project.coverUrl == "") {
             return (
               <StyledProjectCard key={project.id}>
-                <div className="title-container">
+                <div className="title-container-page">
                   <h1>{project.name}</h1>
                   <p>{project.description}</p>
                 </div>
@@ -56,7 +56,7 @@ export const ProjectCard = () => {
               <StyledProjectCard key={project.id}>
                 <div className="img-container">
                   <img className="img-project" src={project.coverUrl} />
-                  <div className="title-container">
+                  <div className="title-container-page">
                     <h1>{project.name}</h1>
                     <p>{project.description}</p>
                   </div>

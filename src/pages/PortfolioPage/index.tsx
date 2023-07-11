@@ -21,13 +21,13 @@ export const PortfolioPage = () => {
   return (
     <PageWrapper>
       <StyledHeader>
-        <img src={Logo} alt="Logotipo da página na cor verde" />
+        <img src={Logo} alt="Logotipo da Portify na cor verde" />
       </StyledHeader>
       <ContentWrapper>
         <UserContainer>
           <UserInfoContainer>
             <h2>{user?.name}</h2>
-            <p>{portfolio?.position}</p>
+            <span>{portfolio?.position}</span>
           </UserInfoContainer>
           <p>{portfolio?.description}</p>
         </UserContainer>

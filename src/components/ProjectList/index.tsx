@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledProjectList } from './styles';
+import { StyledProjectList } from "./styles";
 
 interface IProjectList {
   children: React.ReactNode;

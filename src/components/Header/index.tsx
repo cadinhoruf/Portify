@@ -8,7 +8,7 @@ interface IHeaderProps {
 export const Header: React.FC<IHeaderProps> = ({ children }) => {
   return (
     <StyledHeader>
-      <img src={logo} alt="Logotipo da Página" />
+      <img src={logo} alt="Logotipo da Portify" />
       <StyledContainerHeader>{children}</StyledContainerHeader>
     </StyledHeader>
   );

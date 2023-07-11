@@ -11,7 +11,7 @@ export const NavBar = () => {
         <figure>
           <img
             src={home}
-            alt="ícone com desenho de uma casa, exibe a tela de inicio da dashboard"
+            alt="Icone com desenho de uma casa, exibe a tela de inicio da dashboard"
           />
           <figcaption>início</figcaption>
         </figure>
@@ -20,7 +20,7 @@ export const NavBar = () => {
         <figure>
           <img
             src={profile}
-            alt="ícone com desenho de uma pessoa, representando o perfil, ao clicar exibe informações do perfil do usuario logado"
+            alt="Icone com desenho de uma pessoa, representando o perfil, ao clicar exibe informações do perfil do usuario logado"
           />
           <figcaption>informações de perfil</figcaption>
         </figure>
@@ -30,7 +30,7 @@ export const NavBar = () => {
         <figure>
           <img
             src={projects}
-            alt="ícone com desenho de varios projetos, ao clicar, exiber os projetos do usuário logado"
+            alt="Icone com desenho de varios projetos, ao clicar, exiber os projetos do usuário logado"
           />
           <figcaption>meus projetos</figcaption>
         </figure>

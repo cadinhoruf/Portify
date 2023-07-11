@@ -8,6 +8,7 @@ export const StyledHeaderButton = styled.div`
 
   h3 {
     color: var(--color-white);
+
     font-family: var(--font-family-secondary);
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-1);
@@ -17,22 +18,19 @@ export const StyledHeaderButton = styled.div`
 export const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
-
+  gap: 2rem;
   flex: 1;
 
-  gap: 2rem;
 
   margin-left: 15%;
   margin-right: 15%;
-
   margin-top: 3.125rem;
   margin-bottom: 3.125rem;
 
   h1 {
-    gap: 1rem;
-
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 
     span {
       color: var(--color-primary);
@@ -40,7 +38,8 @@ export const StyledMain = styled.main`
   }
 
   p {
-    color: gray;
+    color: var(--color-black-text);
+
     font-family: var(--font-family-secondary);
     font-weight: var(--font-weight-1);
     font-size: var(--font-size-2);
@@ -50,21 +49,24 @@ export const StyledMain = styled.main`
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    padding: 4rem;
     gap: 1.5625rem;
+
+    width: 100%;
+
+    padding: 3rem 0;
 
     a {
       cursor: pointer;
 
       color: var(--color-primary);
+
       font-size: clamp(1rem, 4vw, 1.75rem);
       font-weight: var(--font-weight-2);
       font-family: var(--font-family-primary);
     }
 
     p {
-      color: gray;
+      color: var(--color-black-text);
 
       font-family: var(--font-family-secondary);
       font-weight: var(--font-weight-1);
@@ -76,14 +78,24 @@ export const StyledMain = styled.main`
 
     h2 {
       font-size: clamp(1rem, 4vw, 1.75rem);
+
+      padding: 0;
     }
 
     small {
-      color: gray;
+      color: var(--color-black-text);
 
       font-family: var(--font-family-secondary);
       font-weight: var(--font-weight-1);
       font-size: var(--font-size-1);
+    }
+
+    @media (min-width: 90rem) {
+      margin-top: 4rem;
+    }
+
+    @media (min-width: 160rem) {
+      margin-top: 20rem;
     }
   }
 `;

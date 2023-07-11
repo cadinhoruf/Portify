@@ -36,14 +36,14 @@ export const CreateProfileForm = () => {
         <option value="Claro">Claro</option>
         <option value="Escuro">Escuro</option>
       </select>
-      {errors.color ? <p>{errors.color.message}</p> : null}
+      {errors.color ? <p className="text-error">{errors.color.message}</p> : null}
 
       <Input label="Cargo" placeholder="Cargo" {...register("position")} />
-      {errors.position ? <p>{errors.position.message}</p> : null}
+      {errors.position ? <p className="text-error">{errors.position.message}</p> : null}
 
       <label>Descrição</label>
       <textarea placeholder="Descrição" {...register("description")} />
-      {errors.description ? <p>{errors.description.message}</p> : null}
+      {errors.description ? <p className="text-error">{errors.description.message}</p> : null}
 
       <Button
         type="submit"

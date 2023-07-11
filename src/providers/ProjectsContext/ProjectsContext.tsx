@@ -67,7 +67,7 @@ export const ProjectsProvider = ({ children }: IProjectsProviderProps) => {
       await api.delete(`/projects/${projectID}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
-      toast.success("Projeto deletado com sucesso.");
+      toast.success("Projeto apagado com sucesso.");
       setProjectList(projectList.filter((project) => project.id !== projectID));
     } catch (error: AxiosError | any) {
       console.error(error);
