@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <img src={LogoBlack} alt="Logo do Portify" />
-      <p>Todos os direitos reservados - Kenzie Academy Brasil</p>
+      <p>Todos os direitos reservados - Ricardo Rufino</p>
     </StyledFooter>
   );
 };
